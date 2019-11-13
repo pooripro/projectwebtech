@@ -144,6 +144,9 @@ nav {
 #logo-container h1 {
 	margin-top: 5px;
 }
+#slideDown {
+	display: none;
+}
 
 .banner {
 	height: 400px;
@@ -156,7 +159,7 @@ nav {
 }
 .home-background {
 	background-image: url(images/genbg.jpg);
-	height: 900px;
+	height: 1000px;
 	width: 100%;
 }
 
@@ -164,18 +167,26 @@ nav {
 
 .content-cards-container {
 	width: 100%;
+	position: absolute;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 .content-cards-row-1 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	margin-top: 50px;
+	width: 60%;
+}
+.content-cards-row-2 {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+	width: 60%;
 }
 .content-card {
 	width: 220px;
 	height: 400px;
-	background-image: url(images/ww1tank.jpg);
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -183,11 +194,16 @@ nav {
 }
 .content-card h1 {
 	font-size: 4.5em;
+	line-height: 1.1;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 2px #000000;
 }
 .small-text {
 	font-size: 14px;
 }
 .content-card h3 {
 	margin-top: 40px;
-	font-size: 
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 2px #000000;
 }
+
