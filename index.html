@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Armored Warfare</title>
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <script
+ 	 		src="https://code.jquery.com/jquery-3.4.1.min.js"
+  			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  			crossorigin="anonymous">	
+  		</script>
+    </head>
+    <body>
+
+    	<div class="font">
+    	<div class="index-container">
+    		<div class="index-container-row-1 center-content animated fadeInDown delay-1s slow">
+    		<div><h1>ARMOURED</h1></div>
+    			<div><img src="images/shield.png"></div>
+    			<div><h1>WARFARE</h1></div>
+    		</div>
+    		<div class="index-container-row-2 center-content animated fadeInDown delay-1-5s slow">
+    			<h2>THE WORKHORSE OF MODERN WAR</h2>
+    		</div>
+    		<div class="index-container-row-3 center-content animated fadeInUp delay-2s slow">
+    			<a href="home.html"><button id="enter-btn">ENTER SITE</button></a>
+    		</div>
+    	</div>
+
+
+
+
+    		<div class="back animated fadeIn slower"></div>
+    	</div>
+
+    	    </body>
+    <script type="text/javascript">
+    	var windowWidth = $(window).width();
+
+    		$('.font').mousemove(function(event){
+    			var moveX = (($(window).width() / 2)- event.pageX) *0.025;
+    			var moveY = (($(window).height() / 2)- event.pageY) *0.025;
+    			$('.back').css('margin-left', moveX + 'px');
+    			$('.back').css('margin-top', moveY + 'px');
+    		});
+    </script>
+</html>

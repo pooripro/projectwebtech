@@ -1,0 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Anton', san-serif;
+}
+.font {
+/*
+	background-image: url(images/homewallpaper.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+*/
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #ffffff;
+}
+
+.back {
+	width: 120%;
+	height: 120%;
+	left: -10%;
+	top: -10%;
+	position: absolute;
+	background: url(images/homewallpaper.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+.center-content {
+	display: flex;
+	justify-content: center;	
+	width: 100%;
+}
+
+.index-container {
+	width: 100%;
+	height: 200px;
+	z-index: 1;
+	position: absolute;
+	margin-top: 25%;
+	color: white;
+	letter-spacing: 0.1em;
+	text-shadow: 2px 2px 4px #000000;
+
+}
+
+
+
+.index-container-row-1 h1 {
+
+	font-size: 5em;
+	margin: 0;
+}
+
+.index-container-row-1 img {
+	height: 5em;
+	margin: 1em 0.5em 0 0.5em;
+}
+
+.index-container-row-2 h2 {
+	letter-spacing: 0.3em;
+	font-size: 1.5em;
+}
+
+#enter-btn {
+  	background-color: #ffffff;
+  	border: none;
+ 	color: black;
+ 	padding: 15px 32px;
+ 	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 2em;
+ 	font-family: 'Anton', san-serif;
+ 	margin-top: 1em;
+ 	cursor: pointer;
+ 	transition: background 0.2s ease-in-out;
+}
+
+#enter-btn:hover {
+	background-color: black;
+	color: white;
+}
+/*home*/
+.home-container {
+	width: 100%;
+	height: 200px;
+	z-index: 1;
+	position: absolute;
+	margin-top: 5%;
+	color: white;
+	letter-spacing: 0.1em;
+	text-shadow: 1px 1px 2px #000000;
+
+}
+
+
+
+.home-container-row-1 h1 {
+
+	font-size: 4em;
+	margin: 0;
+}
+
+.home-container-row-1 img {
+	height: 4em;
+	margin: 1em 0.5em 0 0.5em;
+}
+.home-container-row-2 h2{
+	text-align: center;
+	font-size: 1.2em;
+	width: 50%;
+}
+
+/*navbar*/
+
+nav {
+	width: 100%;
+	background-color: #1B1B1B;
+	height: 50px;
+}
+#logo-container {
+	display: flex;
+	justify-content: flex-start;
+	height: 100%;
+	background-color: #303030;
+	width: 75px;
+	font-size: 18px;
+	color: white;
+	padding-left: 5px;
+}
+#logo-container img {
+	height: 24px;
+	margin: 13px 0 0 5px;
+}
+#logo-container h1 {
+	margin-top: 5px;
+}
+
+.banner {
+	height: 400px;
+	width: 100%;
+	background-image: url(images/bannerwallpaper.jpg);
+	background-repeat: no-repeat
+	background-size: cover;
+	background-position: 0% 40%;
+	z-index: 0;
+}
+.home-background {
+	background-image: url(images/genbg.jpg);
+	height: 900px;
+	width: 100%;
+}
+
+/*content-cards*/
+
+.content-cards-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.content-cards-row-1 {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.content-card {
+	width: 220px;
+	height: 400px;
+	background-image: url(images/ww1tank.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+.content-card h1 {
+	font-size: 4.5em;
+}
+.small-text {
+	font-size: 14px;
+}
+.content-card h3 {
+	margin-top: 40px;
+	font-size: 
+}
