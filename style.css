@@ -62,7 +62,7 @@ body {
 
 .index-container-row-1 img {
 	height: 5em;
-	margin: 1em 0.5em 0 0.5em;
+	margin: 1.5em 0.5em 0 0.5em;
 }
 
 .index-container-row-2 h2 {
@@ -83,6 +83,7 @@ body {
  	margin-top: 1em;
  	cursor: pointer;
  	transition: background 0.2s ease-in-out;
+ 	transition: filter 0.2s ease-in-out;
 }
 
 #enter-btn:hover {
@@ -191,6 +192,13 @@ nav {
 	background-size: cover;
 	text-align: center;
 	color: white;
+	transition: box-shadow 0.3s ease-in-out;
+}
+.content-card:hover {
+	box-shadow: 0 0 10px #ffffff;
+	cursor: pointer;
+	filter: brightness(130%);
+  		-webkit-filter: brightness(130%);
 }
 .content-card h1 {
 	font-size: 4.5em;
