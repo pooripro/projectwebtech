@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Catalog</title>
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <script
+ 	 		src="https://code.jquery.com/jquery-3.4.1.min.js"
+  			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  			crossorigin="anonymous">	
+  		</script>
+</head>
+<body>
+  		<nav>
+		<div id="logo-container" class="animated fadeInLeft">
+		<img src="images/shield.png">
+		<h1>AW</h1></div>
+	</nav>
+	<div class="banner catalog-banner" id="slideDown">
+    	<div class="home-container">
+    		<div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
+
+    			<div><img src="images/books.png"></div>
+
+    		</div>
+    		<div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
+    			<h1 style="font-size: 4em;">ARMOUR CATALOG</h1>
+    		</div>
+    		<div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
+    			<h2>
+    				catalog of tanks and armoured vehicle across the eras 
+				</h2>
+    		</div>
+    	</div>
+	</div>
+	<div class="home-background">
+		<div class="content-cards-container">
+			<div class="content-cards-row-1">
+				<div class="catalog-card animated fadeInRight delay-1s" style="background-image: url(images/ww1tank.jpg);">
+					<h3>HISTORY OF</h3>
+					<h1>THE TANK</h1>
+				</div>
+				<div class="catalog-card animated fadeInRight delay-1-25s"  style="background-image: url(images/tigertank.jpg);">
+					<h3>ARMOUR</h3>
+					<h1>TACTIC</h1>
+				</div>
+				<div class="catalog-card animated fadeInRight delay-1-5s"  style="background-image: url(images/wot.jpg);">
+					<h3>TANK</h3>
+					<h1 style="font-size: 4em;">BATTLES</h1>
+				</div>											
+			</div>			
+		</div>
+
+	</div>
+
+
+
+</body>
+<script type="text/javascript">
+		$(document).ready(function(){
+    			$("#slideDown").slideDown(1500);
+		});
+		
+	</script>
+</html>
