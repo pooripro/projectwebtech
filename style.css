@@ -237,6 +237,9 @@ nav {
 	text-align: center;
 	color: white;
 	transition: box-shadow 0.3s ease-in-out;
+	display: flex;
+	align-items: flex-end;
+
 }
 .catalog-card:hover {
 	box-shadow: 0 0 10px #ffffff;
@@ -245,4 +248,26 @@ nav {
   		-webkit-filter: brightness(130%);
 }
 
-
+.catalog-description {
+	height: 50px;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	opacity: 80%;
+	justify-content: space-between;
+}
+.catalog-description h1 {
+	margin-left: 10px;
+	color: black;
+}
+.catalog-description img {
+	height: 60%;
+	margin: 10px 10px 0 0;
+}
+.catalog-caption {
+	color: white;
+	margin: 40px 0 0 0;
+}
+.catalog-caption-container {
+	width: 60%;
+}
