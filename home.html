@@ -19,6 +19,7 @@
 		<img src="images/shield.png">
 		<a class="content-link" id="onclick" href="index.html"></a>	
 		<h1>AW</h1></div>
+		<h4 id="nav-indicator">Back to FrontPage</h4>
 	</nav>
 	<div class="banner" id="slideDown">
     	<div class="home-container">
@@ -39,22 +40,22 @@
 	<div class="home-background">
 		<div class="content-cards-container">
 			<div class="content-cards-row-1">
-				<div class="content-card animated fadeInUp delay-1s" style="background-image: url(images/ww1tank.jpg);">
+				<div class="content-card animated fadeInUp" style="background-image: url(images/ww1tank.jpg);">
 					<a class="content-link" href="history.html"></a>
 					<h3>HISTORY OF</h3>
 					<h1>THE TANK</h1>
 				</div>
-				<div class="content-card animated fadeInUp delay-1-25s"  style="background-image: url(images/tigertank.jpg);">
+				<div class="content-card animated fadeInUp delay-025s"  style="background-image: url(images/tigertank.jpg);">
 					<a class="content-link" href="tactics.html"></a>
 					<h3>ARMOUR</h3>
 					<h1>TACTIC</h1>
 				</div>
-				<div class="content-card animated fadeInUp delay-1-5s"  style="background-image: url(images/wot.jpg);">
+				<div class="content-card animated fadeInUp delay-05s"  style="background-image: url(images/wot.jpg);">
 					<a class="content-link" href="battle.html"></a>
 					<h3>TANK</h3>
 					<h1 style="font-size: 4em;">BATTLES</h1>
 				</div>
-				<div class="content-card animated fadeInUp delay-1-75s"  style="background-image: url(images/ammo.jpg);">
+				<div class="content-card animated fadeInUp delay-075s"  style="background-image: url(images/ammo.jpg);">
 					<a class="content-link" href="ammo.html"></a>
 					<h3>TANK'S</h3>
 					<h1>AMMO</h1>
@@ -88,8 +89,15 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
     			$("#slideDown").slideDown(1200);
-				$("#slideDown").scrollTop(1);
+				$("#slideDown").scrollTop(0);
 		});
+		$("#logo-container").hover(function(){
+			console.log("moused over")
+			$("#nav-indicator").fadeIn(500);
+			// $('#nav-indicator').css('display', 'block');
+		}, function(){
+    $('#nav-indicator').fadeOut(500);
+  });
 		// $("#onclick").click(function(){
  	// 	scroll(0,0);
 		// });

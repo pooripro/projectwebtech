@@ -155,7 +155,17 @@ nav {
 	position: fixed;
 	top: 0;
 	z-index: 3;
+	display: flex;
 }
+
+#nav-indicator {
+	color: white;
+	letter-spacing: 0.1em;
+	font-weight: lighter;
+	margin:12px 0 0 10px;
+	display: none;
+}
+
 #logo-container {
 	display: flex;
 	justify-content: flex-start;
