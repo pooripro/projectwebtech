@@ -214,14 +214,16 @@ nav {
 .content-cards-row-1 {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 50px;
 	width: 60%;
+	margin-top: 50px;
 }
 .content-cards-row-2 {
 	display: flex;
 	justify-content: space-around;
 	margin-top: 50px;
 	width: 60%;
+	margin-top: 500px;
+	position: absolute;
 }
 .content-card {
 	width: 220px;
@@ -230,13 +232,21 @@ nav {
 	background-size: cover;
 	text-align: center;
 	color: white;
-	transition: box-shadow 0.3s ease-in-out;
+	transition: all 0.25s ease-in-out;
+/*	transition: box-shadow 0.5s ease-in-out;
+	-webkit-transition: filter 0.5s ease-in-out;
+	-webkit-transition: box-shadow 0.5s ease-in-out;*/
+/*	-webkit-transition: margin 0.2s ease-in-out;
+    -moz-transition: margin 0.2s ease-in-out;
+    -o-transition: margin 0.2s ease-in-out;*/
 }
 .content-card:hover {
+	
 	box-shadow: 0 0 20px black;
 	cursor: pointer;
 	filter: brightness(130%);
-  		-webkit-filter: brightness(130%);
+	-webkit-filter: brightness(130%);
+  	margin-top: 5px;
 }
 .content-card h1 {
 	font-size: 4.5em;
