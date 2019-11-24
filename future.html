@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FUTURE TANK</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_history.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">    
+    </script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- แถบด้านบน  -->
+    <nav>
+        <div id="logo-container" class="animated fadeInLeft">
+        <img src="images/shield.png">
+        <h1>AW</h1></div>
+        <a class="content-link" href="home.html"></a>   
+    </nav>
+
+    <!--  เนื้อหา content ด้านบน  -->
+
+    <div class="banner" id="slideDown" style="background-image: url(images/wot.jpg);">
+        <div class="home-container" style="margin-top: 50px">
+            <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
+
+                <div><img src="images/bullets.png" alt="ammo"></div>
+
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-25s">
+                <h1 style="font-size: 4em;">ARMOUR OF THE FUTURE</h1>
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
+                <h2>
+                    Future tanks are full of sophisicated protection.
+                    they indicate the future of amoured warfare.
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!--  เนื้อหา content ด้านล่าง -->
+    <div class="content_bottom" style="flex-wrap: wrap;">  
+        <div class="future-click" id="previous">Prev</div>
+         <div class="future-container">
+            <div class="future-img-container" id="img1" style="background-image: url(images/2a7.jpg);">
+            </div>
+            <div class="future-img-container" id="img2" style="background-image: url(images/m1.jpg);">
+            </div>
+            <div>
+            <div class="future-details-container" id="det1">
+            <h1>Description 1</h1>
+            <p>The history of the tank began in World War I, when armoured all-terrain fighting vehicles were first
+                    deployed as a response to the problems of trench warfare, ushering in a new era of mechanized
+                    warfare. Though initially crude and unreliable, tanks eventually became a mainstay of ground armies.
+                    By World War II, tank design had advanced significantly, and tanks were used in quantity in all land
+                    theatres of the war. The Cold War saw the rise of modern tank doctrine and the rise of the
+                    general-purpose main battle tank. The tank still provides the backbone to land combat operations in
+                    the 21st century.</p>
+            </div>
+            <div class="future-details-container" id="det2">
+            <h1>Description 2</h1>
+            <p>The history of the tank began in World War I, when armoured all-terrain fighting vehicles were first
+                    deployed as a response to the problems of trench warfare, ushering in a new era of mechanized
+                    warfare. Though initially crude and unreliable, tanks eventually became a mainstay of ground armies.
+                    By World War II, tank design had advanced significantly, and tanks were used in quantity in all land
+                    theatres of the war. The Cold War saw the rise of modern tank doctrine and the rise of the
+                    general-purpose main battle tank. The tank still provides the backbone to land combat operations in
+                    the 21st century.</p>
+            </div>
+            </div>
+        </div>
+        <div class="future-click" id="next">Next</div>
+    </div>
+
+
+
+</body>
+<script type="text/javascript">
+        $(document).ready(function(){
+                $("#slideDown").slideDown(1500);
+        }); 
+
+        // console.log($('.future-img-container').length);
+        var currentPicture = 1;
+        // $('#next').click(function() {
+        // console.log("clicked");
+        // currentPicture++;
+        // if (currentPicture > $('.future-img-container').length) {
+        // currentPicture = 1;
+        //  }
+        // $('.future-img-container').css('display', 'none');
+        // $(`#img${currentPicture}`).css('display', 'inherit');
+        // });
+
+        $('#next').click(function() {
+        console.log("clicked");
+        currentPicture++;
+        if (currentPicture > $('.future-img-container').length) {
+        currentPicture = 1;
+         }
+         $('.future-img-container').fadeIn(500);
+         $('.future-details-container').fadeIn(500);
+        $('.future-img-container').css('display', 'none');
+        $('.future-details-container').css('display', 'none');
+        $(`#img${currentPicture}`).css('display', 'block');
+        $(`#det${currentPicture}`).css('display', 'block');
+        });
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

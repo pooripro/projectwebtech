@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TANK BATTLES</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_history.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">    
+    </script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- แถบด้านบน  -->
+    <nav>
+        <div id="logo-container" class="animated fadeInLeft">
+        <img src="images/shield.png">
+        <h1>AW</h1></div>
+        <a class="content-link" href="home.html"></a>   
+    </nav>
+
+    <!--  เนื้อหา content ด้านบน  -->
+<!--     <div class="content_top" id="slideDown">
+        <div class="content_top_box">
+            <div class="content_top_box_image">
+                <img src="images/history/Book.png" alt="Book">
+            </div>
+            <div class="content_top_box_heading">
+                <h1>HISTORY OF TANK</h1>
+            </div>
+            <div class="content_top_box_details">
+                <p>A tank is an armoured fighting vehicle designed for front-line combat.<br> Tanks have heavy
+                    firepower,
+                    strong armour, and good battlefield manoeuvrability<br> provided by tracks and a powerful engine;
+                    usually their main armament is <br> mounted in a turret. They are a mainstay of modern 20th and 21st
+                    century<br>ground forces and a key part of combined arms combat.</p>
+            </div>
+        </div>
+    </div>
+ -->
+    <div class="banner" id="slideDown" style="background-image: url(images/wot.jpg);">
+        <div class="home-container" style="margin-top: 50px">
+            <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
+
+                <div><img src="images/bullets.png" alt="ammo"></div>
+
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-25s">
+                <h1 style="font-size: 4em;">TANK BATTLES</h1>
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
+                <h2>
+                    The historic tank battles that decided the course of history.
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!--  เนื้อหา content ด้านล่าง -->
+    <div class="content_bottom" style="flex-wrap: wrap;">
+        <div class="video_container">
+            <div>
+                <div class="overlay">
+                 <h1>BATTLE FOOTAGE : KURSK</h1>
+                </div>
+                <video autoplay muted loop id="battle_video">
+                <source src="src/battle.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+            <div class="content_bottom_box" style="margin-top: 25px;">
+            <div class="content_bottom_box_details">
+                <h1>Battle of Kursk</h1>
+                <p style="margin-bottom: 20px;">he Battle of Kursk was a Second World War engagement between German and Soviet forces on the Eastern Front near Kursk (450 kilometres or 280 miles south-west of Moscow) in the Soviet Union, during July and August 1943. The battle began with the launch of the German offensive, Operation Citadel (German: Unternehmen Zitadelle), on 5 July, which had the objective of pinching off the Kursk salient with attacks on the base of the salient from north and south simultaneously. After the German offensive stalled on the northern side of the salient, on 12 July the Soviets commenced their Kursk Strategic Offensive Operation with the launch of Operation Kutuzov (Russian: Кутузов) against the rear of the German forces in the northern side. On the southern side, the Soviets also launched powerful counterattacks the same day, one of which led to a large armoured clash, the Battle of Prokhorovka. On 3 August, the Soviets began the second phase of the Kursk Strategic Offensive Operation with the launch of Operation Polkovodets Rumyantsev (Russian: Полководец Румянцев) against the German forces in the southern side of the Kursk salient.</p>
+            </div>
+            <div class="content_bottom_box_image">
+                <img src="images/Battle of Kursk - southern sector.png" alt="Kursk">
+            </div>
+            <div class="content_bottom_box_description">
+                <p>Battle of Kursk - southern sector</p>
+            </div>
+        </div>    
+    </div>
+
+
+
+</body>
+<script type="text/javascript">
+        $(document).ready(function(){
+                $("#slideDown").slideDown(1500);
+        }); 
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="bar">
+        <img src="image/history/Shield.png" alt="Shield">
+        <h1>AM</h1>
+    </div>
+
+    <div id="top">
+
+        <img src="image/history/Book.png" alt="Book"
+            style="position: absolute; left: 0%; right: 0%; top: 10.97%;bottom: 10.97%;">
+        <h1>HISTORY OF TANK</h1>
+        <p> A tank is an armoured fighting vehicle designed for front-line combat. Tanks have heavy firepower, strong
+            armour, and good battlefield manoeuvrability provided by tracks and a powerful engine; usually their main
+            armament is mounted in a turret. They are a mainstay of modern 20th and 21st century ground forces and a key
+            part of combined arms combat. </p>
+    </div>
+
+    <div id="bottom">
+        
+        <p class="content">The history of the tank began in World War I, when armoured all-terrain fighting vehicles were first deployed
+            as a response to the problems of trench warfare, ushering in a new era of mechanized warfare. Though
+            initially crude and unreliable, tanks eventually became a mainstay of ground armies. By World War II, tank
+            design had advanced significantly, and tanks were used in quantity in all land theatres of the war. The Cold
+            War saw the rise of modern tank doctrine and the rise of the general-purpose main battle tank. The tank
+            still provides the backbone to land combat operations in the 21st century.</p>
+
+        <img src="image/history/about_tank.png" alt="about_tank" style="position: absolute;
+            width: 740px;
+            height: 416px;
+            left: 364px;
+            top: 987px;">
+
+        <p>The first tank to engage in battle, the British Mark I tank</p>    
+
+
+    </div> -->
