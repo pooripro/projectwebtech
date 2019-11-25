@@ -23,8 +23,10 @@
     <nav>
         <div id="logo-container" class="animated fadeInLeft">
         <img src="images/shield.png">
+        <a class="content-link" id="onclick" href="home.html"></a> 
         <h1>AW</h1></div>
-        <a class="content-link" id="onclick" href="home.html"></a>   
+        <h4 id="nav-indicator">Back to HomePage</h4>
+          
     </nav>
     <div class="banner" id="slideDown" style="background-image: url(images/fury.jpg);">
         <div class="home-container" style="margin-top: 50px">
@@ -47,7 +49,7 @@
     <!--  เนื้อหา content ด้านล่าง -->
   
     <div class="content_bottom" style="">
-        <div class="content_bottom_box">
+        <div class="content_bottom_box animated fadeInUp">
 <!--             <div class="content_bottom_box_description">
                 <p>The first tank to engage in battle, the British Mark I tank</p>
             </div> -->
@@ -84,6 +86,13 @@
         $("#onclick").click(function(){
         scroll(0,0);
         });
+        $("#logo-container").hover(function(){
+            console.log("moused over")
+            $("#nav-indicator").fadeIn(500);
+            // $('#nav-indicator').css('display', 'block');
+              }, function(){
+         $('#nav-indicator').fadeOut(500);
+  }); 
 
 </script>
 </html>

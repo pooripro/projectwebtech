@@ -22,9 +22,11 @@
     <!-- แถบด้านบน  -->
     <nav>
         <div id="logo-container" class="animated fadeInLeft">
+            <a class="content-link" href="home.html"></a>
         <img src="images/shield.png">
         <h1>AW</h1></div>
-        <a class="content-link" href="home.html"></a>   
+        
+        <h4 id="nav-indicator">Back to HomePage</h4>   
     </nav>
 
     <!--  เนื้อหา content ด้านบน  -->
@@ -33,7 +35,7 @@
         <div class="home-container" style="margin-top: 50px">
             <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
 
-                <div><img src="images/bullets.png" alt="ammo"></div>
+                <div><img src="images/future.png" alt="ammo"></div>
 
             </div>
             <div class="home-container-row-2 center-content animated fadeInUp delay-1-25s">
@@ -118,6 +120,14 @@
         $(`#img${currentPicture}`).css('display', 'block');
         $(`#det${currentPicture}`).css('display', 'block');
         });
+
+                $("#logo-container").hover(function(){
+            console.log("moused over")
+            $("#nav-indicator").fadeIn(500);
+            // $('#nav-indicator').css('display', 'block');
+              }, function(){
+         $('#nav-indicator').fadeOut(500);
+  }); 
 
 
 </script>

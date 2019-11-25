@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Anton', san-serif;
+	background: black;
 }
 .font {
 
@@ -490,4 +491,128 @@ div.future-click:hover img {
 	background: #1A1A1A;
 	padding: 25px 20px 25px 20px;
 
+}
+
+/*member list*/
+
+.member-link {
+	color: white;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	font-weight: lighter;
+}
+.member-card {
+	width: 300px;
+	height: 500px;
+	background-color: #1A1A1A99;
+	border: 1px solid white;
+}
+.member-card img {
+	width: 100%;
+}
+div.member-card h2 {
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-weight: lighter;
+	color: white;
+	letter-spacing: 1px;
+	margin-top: 5px;
+}
+.content-member-row {
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	top: 150px;
+}
+.source {
+/*	border: 1px solid white;*/
+	padding: 10px 20px 10px 20px;
+	margin-top: 750px;
+	width: 50%;
+	color: white;
+	margin-bottom: 100px;
+/*	background-color: rgba(0,0,0,.5);*/
+
+}
+.source-container {
+	display: flex;
+	justify-content: center;
+}
+.source ul {
+	list-style-type: none;
+	margin-left: 80px;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+}
+.source a {
+	text-decoration: none;
+	color: lightgrey;
+}
+.source span {
+	opacity: 0;
+	float: right;
+	margin-right: 10px;
+
+}
+.source li {
+	border: 1px solid rgba(0,0,0,0);
+	padding-left: 20px;
+	color: #cecece;
+}
+.source li:hover {
+	background-color: rgba(0,0,0,1);
+	-webkit-transition: background-color 0.5s linear,border 0.5s linear,color 0.5s linear;
+    -ms-transition: background-color 0.5s linear,border 0.5s linear,color 0.5s linear;
+    transition: background-color 0.5s linear,border 0.5s linear,color 0.5s linear;
+    border: 1px solid rgba(255,255,255,1);
+    color: white;
+}
+.source li:hover a {
+	color: white;
+}
+.source li:hover span {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s linear,margin-right 0.5s linear;
+    -ms-transition: opacity 0.5s linear,margin-right 0.5s linear;
+    transition: opacity 0.5s linear,margin-right 0.5s linear;
+    margin-right: 20px;
+}
+.source h4,h3 {
+	font-weight: lighter;
+}
+.source h3 {
+	font-size: 3em;
+}
+.source h4 {
+	font-size: 2.5em;
+	margin-bottom: 10px
+}
+.source h4 {
+	margin-left: 50px;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.floating-reverse {  
+    animation-name: floatingreverse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+@keyframes floatingreverse {
+    from { transform: translate(0,  15px); }
+    65%  { transform: translate(0, 0px); }
+    to   { transform: translate(0, 15px); }    
 }

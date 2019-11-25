@@ -22,9 +22,11 @@
     <!-- แถบด้านบน  -->
     <nav>
         <div id="logo-container" class="animated fadeInLeft">
+        <a class="content-link" href="home.html"></a>  
         <img src="images/shield.png">
         <h1>AW</h1></div>
-        <a class="content-link" href="home.html"></a>   
+        <h4 id="nav-indicator">Back to HomePage</h4> 
+         
     </nav>
 
     <!--  เนื้อหา content ด้านบน  -->
@@ -33,15 +35,15 @@
         <div class="home-container" style="margin-top: 50px">
             <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
 
-                <div><img src="images/bullets.png" alt="ammo"></div>
+                <div><img src="images/weird.png" alt="ammo"></div>
 
             </div>
             <div class="home-container-row-2 center-content animated fadeInUp delay-1-25s">
-                <h1 style="font-size: 4em;">WEIRD TANK</h1>
+                <h1 style="font-size: 4em;">WEIRDEST TANK</h1>
             </div>
             <div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
                 <h2>
-                    not all tank looks convention some of the tanks have outlandish design.
+                    not all tank looks conventional. some of the tanks have crazy and outlandish design.
                 </h2>
             </div>
         </div>
@@ -51,18 +53,18 @@
     <div class="content_bottom" style="flex-wrap: wrap;">  
         <div class="future-click" id="prev"><img src="images/prev.png"></div>
          <div class="future-container">
-            <div class="future-img-container" id="img1" style="background-image: url(images/t14-2.jpg);">
+            <div class="future-img-container" id="img1" style="background-image: url(images/tzar.jpg); background-position: 50% 70%">
             </div>
-            <div class="future-img-container" id="img2" style="background-image: url(images/pt-16.jpg);">
+            <div class="future-img-container" id="img2" style="background-image: url(images/279.jpg);">
             </div>
             <div>
             <div class="future-details-container" id="det1">
-            <h1>T-14 Armata</h1>
-            <p>The Armata was designed over the course of five years, and features a number of innovative characteristics, including an unmanned turret. The crew of three is seated in an armoured capsule in the front of the hull, which will also include a toilet for the crew.</p>
+            <h1>Tsar Tank</h1>
+            <p>It differed from modern tanks in that it did not use caterpillar tracks—rather, it used a tricycle design, meaning it does not suit the modern definition of a tank. The two front spoked wheels were nearly 9 metres (30 ft) in diameter; the rear-mounted third wheel was only 1.5 metres (5 ft) high. The upper cannon turret reached a height of nearly 8 metres (26 ft). The hull was 12 metres (39 ft) wide with two more cannon in sponsons. Additional weapons were also planned under the belly. Each wheel was powered by a 250 hp (190 kW) Sunbeam engine.[1]</p>
             </div>
             <div class="future-details-container" id="det2">
-            <h1>PT-16</h1>
-            <p>The tank is protected by new modular composite armor. The turret armor is extremely thick and is reminiscent of the AMAP composite armor from the German company IBD Deisenroth as utilized on the Leopard 2 Evolution. IBD Deisenroth has supplied the armor package for the Rosomak-M variant and will deliver the armor for the new Leopard 2PL version. In so far it seems to be possible that IBD delivered the armor for the PT-16.</p>
+            <h1>Nuclear-Proof Tank</h1>
+            <p>This is the ominously-named Object 279, one of the last Russian heavy tank prototypes before Kruschev banned all tanks heavier than 37 tons. Built in 1959 at 60 metric tons, it was designed to withstand a nuclear shockwave. It resembles some kind of doom oyster.</p>
             </div>
             </div>
         </div>
@@ -118,6 +120,13 @@
         $(`#det${currentPicture}`).css('display', 'block');
         });
 
+        $("#logo-container").hover(function(){
+            console.log("moused over")
+            $("#nav-indicator").fadeIn(500);
+            // $('#nav-indicator').css('display', 'block');
+              }, function(){
+         $('#nav-indicator').fadeOut(500);
+  }); 
 
 </script>
 </html>
