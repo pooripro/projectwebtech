@@ -8,14 +8,7 @@ body {
 	font-family: 'Anton', san-serif;
 }
 .font {
-/*
-	background-image: url(images/homewallpaper.jpg);
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
 
-*/
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -33,7 +26,9 @@ body {
 	background-position: center;
 	z-index: 0;
 }
-
+p {
+	font-family: 'Tomorrow', sans-serif;
+}
 .center-content {
 	display: flex;
 	justify-content: center;	
@@ -50,6 +45,9 @@ body {
 	letter-spacing: 0.1em;
 	text-shadow: 2px 2px 4px #000000;
 
+}
+.index-container:hover {
+	cursor: default;
 }
 
 
@@ -82,11 +80,32 @@ body {
  	font-family: 'Anton', san-serif;
  	margin-top: 1em;
  	cursor: pointer;
- 	transition: background 0.2s ease-in-out;
+ 	transition: all 0.2s ease-in-out;
  	transition: filter 0.2s ease-in-out;
 }
 
 #enter-btn:hover {
+	background-color: black;
+	transition: background 0.2s ease-in-out;
+	color: white;
+	border: 1px solid white;
+}
+.show_vid {
+  	color: white;
+  	background: none;
+  	border: 1px solid white;
+ 	padding: 15px 32px;
+ 	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 1em;
+ 	font-family: 'Anton', san-serif;
+ 	margin-top: 1em;
+ 	cursor: pointer;
+ 	transition: background 0.2s ease-in-out;
+}
+
+.show_vid:hover {
 	background-color: black;
 	color: white;
 }
@@ -125,16 +144,27 @@ body {
 
 nav {
 	width: 100%;
-	background-color: #1B1B1B;
+	background-color: black;
 	height: 50px;
 	position: fixed;
+	top: 0;
 	z-index: 3;
+	display: flex;
 }
+
+#nav-indicator {
+	color: white;
+	letter-spacing: 0.1em;
+	font-weight: lighter;
+	margin:12px 0 0 10px;
+	display: none;
+}
+
 #logo-container {
 	display: flex;
 	justify-content: flex-start;
 	height: 100%;
-	background-color: #303030;
+	background-color: #1a1a1a;
 	width: 75px;
 	font-size: 18px;
 	color: white;
@@ -152,25 +182,48 @@ nav {
 }
 
 .banner {
+	margin-top: 50px;
 	height: 400px;
 	width: 100%;
-	background-image: url(images/bannerwallpaper.jpg);
-	background-repeat: no-repeat
+	background-image: url(images/panzer.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0% 40%;
+	background-position: 0% 30%;
 	z-index: 0;
+	/*animation: animatedBackground 10s;*/
+	animation: 20s linear .1s animatedBackground;
+/*    animation-iteration-count: infinite;*/
+    /*animation-timing-function: linear;*/
+    animation-fill-mode: forwards;  
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0% 30%; }
+
+  to {
+    background-position: 0% 60%; }
+   
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0% 30%; }
+
+  to {
+    background-position: 0% 60%; }
+ 
 }
 .home-background {
 	background-image: url(images/genbg.jpg);
-	height: 1000px;
+	background-size: cover;
 	width: 100%;
+	min-height: 1000px
 }
 
 /*content-cards*/
 
 .content-cards-container {
 	width: 100%;
-	position: absolute;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -178,29 +231,39 @@ nav {
 .content-cards-row-1 {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 50px;
 	width: 60%;
+	margin-top: 50px;
 }
 .content-cards-row-2 {
 	display: flex;
 	justify-content: space-around;
 	margin-top: 50px;
 	width: 60%;
+	margin-top: 500px;
+	position: absolute;
 }
 .content-card {
-	width: 220px;
+	min-width: 220px;
 	height: 400px;
 	background-position: center;
 	background-size: cover;
 	text-align: center;
 	color: white;
-	transition: box-shadow 0.3s ease-in-out;
+	transition: all 0.25s ease-in-out;
+/*	transition: box-shadow 0.5s ease-in-out;
+	-webkit-transition: filter 0.5s ease-in-out;
+	-webkit-transition: box-shadow 0.5s ease-in-out;*/
+/*	-webkit-transition: margin 0.2s ease-in-out;
+    -moz-transition: margin 0.2s ease-in-out;
+    -o-transition: margin 0.2s ease-in-out;*/
 }
 .content-card:hover {
-	box-shadow: 0 0 10px #ffffff;
+	
+	box-shadow: 0 0 20px black;
 	cursor: pointer;
 	filter: brightness(130%);
-  		-webkit-filter: brightness(130%);
+	-webkit-filter: brightness(130%);
+  	margin-top: 5px;
 }
 .content-card h1 {
 	font-size: 4.5em;
@@ -270,4 +333,146 @@ nav {
 }
 .catalog-caption-container {
 	width: 60%;
+}
+
+/*ammo card*/
+.ammo-cards-container {
+	width: 60%;
+}
+.ammo_card {
+	width: 100%;
+	background-color:#1A1A1A;
+
+	display: flex;
+	color: white;
+	justify-content: flex-start;
+	margin-top: 50px;
+}
+.ammo-img {
+	min-width: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.ammo_content {
+	margin: 20px 20px 20px 20px;
+}
+.displaynone {
+	display: none;
+}
+.ammo-video-container {
+	width: 100%;
+	margin: 50px 0 0px 0;
+}
+
+/*tank battles*/
+.video_container {
+	width: 60%;
+	margin: 50px 0 0px 0;
+}
+.overlay {
+	background-color:#1A1A1A;
+	color: white;
+}
+.overlay h1 {
+	padding: 10px 10px 10px 20px;
+}
+#battle_video {
+	width: 100%;
+}
+
+/*top 5*/
+
+.tank-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+.tank-card {
+	height: 450px; 	
+	width: 66%;
+	display: flex;
+	align-items: flex-end;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+.tank-details {
+	display: flex;
+	justify-content: space-between;
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	color: white;
+	height: 50px; 
+}
+.tank-details img {
+	height: 80%;
+	margin: 5px 10px 0 0;
+}
+.tank-details h4 {
+	font-size: 2em;
+	margin-left: 10px;
+}
+
+/*future tanks*/
+.future-container {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+.future-img-container:first-of-type {
+	display: block;
+}
+.future-img-container {
+	display: none;
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+}
+.future-details-container:first-of-type {
+	display: block;
+}
+.future-details-container {
+	margin-top: 25px;
+	color: white;
+	display: none;
+	width: 100%;
+	background: #1A1A1A;
+	padding: 25px 20px 25px 20px;
+}
+.future-click {
+	color: white;
+	width: 5%;
+	height: 400px;
+	background-color: #1A1A1A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 20px 0 20px;
+
+}
+.future-click:hover {
+	border: 1px solid white;
+	background-color: black;
+	-webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+
+}
+.future-click:active {
+	background-color: white;
+}
+
+div.future-click img {
+	width: 30%;
+} 
+div.future-click:hover img {
+	width: 35%;
+	-webkit-transition: width 250ms linear;
+    -ms-transition: width 250ms linear;
+    transition: width 250ms linear;
+}
+.future-click:hover {
+	cursor: pointer;
 }
