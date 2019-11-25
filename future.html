@@ -52,30 +52,18 @@
     <div class="content_bottom" style="flex-wrap: wrap;">  
         <div class="future-click" id="prev"><img src="images/prev.png"></div>
          <div class="future-container">
-            <div class="future-img-container" id="img1" style="background-image: url(images/2a7.jpg);">
+            <div class="future-img-container" id="img1" style="background-image: url(images/t14-2.jpg);">
             </div>
-            <div class="future-img-container" id="img2" style="background-image: url(images/m1.jpg);">
+            <div class="future-img-container" id="img2" style="background-image: url(images/pt-16.jpg);">
             </div>
             <div>
             <div class="future-details-container" id="det1">
-            <h1>Description 1</h1>
-            <p>The history of the tank began in World War I, when armoured all-terrain fighting vehicles were first
-                    deployed as a response to the problems of trench warfare, ushering in a new era of mechanized
-                    warfare. Though initially crude and unreliable, tanks eventually became a mainstay of ground armies.
-                    By World War II, tank design had advanced significantly, and tanks were used in quantity in all land
-                    theatres of the war. The Cold War saw the rise of modern tank doctrine and the rise of the
-                    general-purpose main battle tank. The tank still provides the backbone to land combat operations in
-                    the 21st century.</p>
+            <h1>T-14 Armata</h1>
+            <p>The Armata was designed over the course of five years, and features a number of innovative characteristics, including an unmanned turret. The crew of three is seated in an armoured capsule in the front of the hull, which will also include a toilet for the crew.</p>
             </div>
             <div class="future-details-container" id="det2">
-            <h1>Description 2</h1>
-            <p>The history of the tank began in World War I, when armoured all-terrain fighting vehicles were first
-                    deployed as a response to the problems of trench warfare, ushering in a new era of mechanized
-                    warfare. Though initially crude and unreliable, tanks eventually became a mainstay of ground armies.
-                    By World War II, tank design had advanced significantly, and tanks were used in quantity in all land
-                    theatres of the war. The Cold War saw the rise of modern tank doctrine and the rise of the
-                    general-purpose main battle tank. The tank still provides the backbone to land combat operations in
-                    the 21st century.</p>
+            <h1>PT-16</h1>
+            <p>The tank is protected by new modular composite armor. The turret armor is extremely thick and is reminiscent of the AMAP composite armor from the German company IBD Deisenroth as utilized on the Leopard 2 Evolution. IBD Deisenroth has supplied the armor package for the Rosomak-M variant and will deliver the armor for the new Leopard 2PL version. In so far it seems to be possible that IBD delivered the armor for the PT-16.</p>
             </div>
             </div>
         </div>
@@ -109,8 +97,8 @@
         if (currentPicture > $('.future-img-container').length) {
         currentPicture = 1;
          }
-         $('.future-img-container').fadeIn(500);
-         $('.future-details-container').fadeIn(1000);
+         $('.future-img-container').fadeIn(250);
+         $('.future-details-container').fadeIn(250);
         $('.future-img-container').css('display', 'none');
         $('.future-details-container').css('display', 'none');
         $(`#img${currentPicture}`).css('display', 'block');
@@ -123,8 +111,8 @@
         if (currentPicture < 1) {
         currentPicture = $('.future-img-container').length;
          }
-         $('.future-img-container').fadeIn(500);
-         $('.future-details-container').fadeIn(1000);
+         $('.future-img-container').fadeIn(250);
+         $('.future-details-container').fadeIn(250);
         $('.future-img-container').css('display', 'none');
         $('.future-details-container').css('display', 'none');
         $(`#img${currentPicture}`).css('display', 'block');

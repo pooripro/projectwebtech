@@ -299,24 +299,28 @@ nav {
 	background-size: cover;
 	text-align: center;
 	color: white;
-	transition: box-shadow 0.3s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	display: flex;
 	align-items: flex-end;
 
 }
-.catalog-card:hover {
-	box-shadow: 0 0 10px #ffffff;
-	cursor: pointer;
-	filter: brightness(130%);
-  		-webkit-filter: brightness(130%);
+.catalog-card:hover .catalog-description h1{
+	color: white;
+	transition: all 0.5s ease-in-out;
+}
+.catalog-card:hover .catalog-description {
+	background-color: black;
+	border: 1px solid white;
+	transition: all 0.5s ease-in-out;
 }
 
 .catalog-description {
+	border: 1px solid none;
+	background-color: rgba(255,255,255,.5);
+	color: white;
 	height: 50px;
 	width: 100%;
-	background-color: white;
 	display: flex;
-	opacity: 80%;
 	justify-content: space-between;
 }
 .catalog-description h1 {
@@ -395,6 +399,7 @@ nav {
 	display: flex;
 	align-items: flex-end;
 	background-size: cover;
+	background-position: 50% 50%;
 	margin-bottom: 50px;
 }
 .tank-details {
@@ -428,6 +433,7 @@ nav {
 	display: none;
 	width: 100%;
 	height: 400px;
+	background-position: 50% 60%;
 	background-size: cover;
 }
 .future-details-container:first-of-type {
@@ -475,4 +481,13 @@ div.future-click:hover img {
 }
 .future-click:hover {
 	cursor: pointer;
+}
+
+.profile-details-container{
+	margin-top: 25px;
+	color: white;
+	width: 66%;
+	background: #1A1A1A;
+	padding: 25px 20px 25px 20px;
+
 }

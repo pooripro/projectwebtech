@@ -17,6 +17,7 @@
 		<a class="content-link" href="home.html"></a>	
 		<img src="images/shield.png">
 		<h1>AW</h1></div>
+		<h4 id="nav-indicator">Back to HomePage</h4>
 	</nav>
 	<div class="banner catalog-banner" id="slideDown">
     	<div class="home-container">
@@ -35,25 +36,28 @@
     		</div>
     	</div>
 	</div>
-	<div class="home-background" style="height: 1500px">
+	<div class="home-background" style="height: 1500px; background-position: 70% 0">
 		<div class="content-cards-container">
 			<div class="catalog-caption-container">
 				<h1 class="catalog-caption animated fadeIn delay-1-25s">MODERN TANKS</h1>
 			</div>
 			<div class="content-cards-row-1">
 				<div class="catalog-card animated fadeInRight delay-1-25s" style="background-image: url(images/m1.jpg);">
+					<a class="content-link" href="profile-m1.html"></a> 
 					<div class="catalog-description">
 						<h1>M1A1 ABRAMS</h1>
 						<img src="images/usflag.png">
 					</div>
 				</div>
 				<div class="catalog-card animated fadeInRight delay-1-25s" style="background-image: url(images/m1.jpg);">
+					<a class="content-link" href="profile-m1.html"></a> 
 					<div class="catalog-description">
 						<h1>M1A1 ABRAMS</h1>
 						<img src="images/usflag.png">
 					</div>
 				</div>
 				<div class="catalog-card animated fadeInRight delay-1-25s" style="background-image: url(images/m1.jpg);">
+					<a class="content-link" href="profile-m1.html"></a> 
 					<div class="catalog-description">
 						<h1>M1A1 ABRAMS</h1>
 						<img src="images/usflag.png">
@@ -65,18 +69,21 @@
 			</div>
 			<div class="content-cards-row-1">
 				<div class="catalog-card animated fadeInRight delay-1-5s" style="background-image: url(images/m1.jpg);">
+					<a class="content-link" href="profile-m1.html"></a> 
 					<div class="catalog-description">
 						<h1>M1A1 ABRAMS</h1>
 						<img src="images/usflag.png">
 					</div>
 				</div>
 				<div class="catalog-card animated fadeInRight delay-1-5s" style="background-image: url(images/m1.jpg);">
+					<a class="content-link" href="profile-m1.html"></a> 
 					<div class="catalog-description">
 						<h1>M1A1 ABRAMS</h1>
 						<img src="images/usflag.png">
 					</div>
 				</div>
 				<div class="catalog-card animated fadeInRight delay-1-5s" style="background-image: url(images/m1.jpg);">
+					<a class="content-link" href="profile-m1.html"></a> 
 					<div class="catalog-description">
 						<h1>M1A1 ABRAMS</h1>
 						<img src="images/usflag.png">
@@ -88,18 +95,21 @@
 			</div>
 			<div class="content-cards-row-1">
 				<div class="catalog-card animated fadeInRight delay-1-75s" style="background-image: url(images/m1.jpg);">
+					<a class="content-link" href="profile-m1.html"></a> 
 					<div class="catalog-description">
 						<h1>M1A1 ABRAMS</h1>
 						<img src="images/usflag.png">
 					</div>
 				</div>
 				<div class="catalog-card animated fadeInRight delay-1-75s" style="background-image: url(images/m1.jpg);">
+					<a class="content-link" href="profile-m1.html"></a> 
 					<div class="catalog-description">
 						<h1>M1A1 ABRAMS</h1>
 						<img src="images/usflag.png">
 					</div>
 				</div>
 				<div class="catalog-card animated fadeInRight delay-1-75s" style="background-image: url(images/m1.jpg);">
+					<a class="content-link" href="profile-m1.html"></a> 
 					<div class="catalog-description">
 						<h1>M1A1 ABRAMS</h1>
 						<img src="images/usflag.png">
@@ -118,6 +128,13 @@
 		$(document).ready(function(){
     			$("#slideDown").slideDown(1500);
 		});
+		        $("#logo-container").hover(function(){
+            console.log("moused over")
+            $("#nav-indicator").fadeIn(500);
+            // $('#nav-indicator').css('display', 'block');
+              }, function(){
+         $('#nav-indicator').fadeOut(500);
+  }); 
 		
 	</script>
 </html>
