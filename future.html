@@ -29,7 +29,7 @@
 
     <!--  เนื้อหา content ด้านบน  -->
 
-    <div class="banner" id="slideDown" style="background-image: url(images/wot.jpg);">
+    <div class="banner" id="slideDown" style="background-image: url(images/t14.jpg);">
         <div class="home-container" style="margin-top: 50px">
             <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
 
@@ -50,7 +50,7 @@
 
     <!--  เนื้อหา content ด้านล่าง -->
     <div class="content_bottom" style="flex-wrap: wrap;">  
-        <div class="future-click" id="previous">Prev</div>
+        <div class="future-click" id="prev"><img src="images/prev.png"></div>
          <div class="future-container">
             <div class="future-img-container" id="img1" style="background-image: url(images/2a7.jpg);">
             </div>
@@ -79,19 +79,20 @@
             </div>
             </div>
         </div>
-        <div class="future-click" id="next">Next</div>
+        <div class="future-click" id="next"><img src="images/next.png"></div>
     </div>
 
 
 
 </body>
 <script type="text/javascript">
+        
         $(document).ready(function(){
                 $("#slideDown").slideDown(1500);
         }); 
 
         // console.log($('.future-img-container').length);
-        var currentPicture = 1;
+        
         // $('#next').click(function() {
         // console.log("clicked");
         // currentPicture++;
@@ -101,7 +102,7 @@
         // $('.future-img-container').css('display', 'none');
         // $(`#img${currentPicture}`).css('display', 'inherit');
         // });
-
+        var currentPicture = 1;
         $('#next').click(function() {
         console.log("clicked");
         currentPicture++;
@@ -109,7 +110,21 @@
         currentPicture = 1;
          }
          $('.future-img-container').fadeIn(500);
-         $('.future-details-container').fadeIn(500);
+         $('.future-details-container').fadeIn(1000);
+        $('.future-img-container').css('display', 'none');
+        $('.future-details-container').css('display', 'none');
+        $(`#img${currentPicture}`).css('display', 'block');
+        $(`#det${currentPicture}`).css('display', 'block');
+        });
+
+        $('#prev').click(function() {
+        console.log("clicked");
+        currentPicture--;
+        if (currentPicture < 1) {
+        currentPicture = $('.future-img-container').length;
+         }
+         $('.future-img-container').fadeIn(500);
+         $('.future-details-container').fadeIn(1000);
         $('.future-img-container').css('display', 'none');
         $('.future-details-container').css('display', 'none');
         $(`#img${currentPicture}`).css('display', 'block');

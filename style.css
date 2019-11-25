@@ -80,7 +80,7 @@ p {
  	font-family: 'Anton', san-serif;
  	margin-top: 1em;
  	cursor: pointer;
- 	transition: background 0.2s ease-in-out;
+ 	transition: all 0.2s ease-in-out;
  	transition: filter 0.2s ease-in-out;
 }
 
@@ -88,6 +88,7 @@ p {
 	background-color: black;
 	transition: background 0.2s ease-in-out;
 	color: white;
+	border: 1px solid white;
 }
 .show_vid {
   	color: white;
@@ -184,11 +185,33 @@ nav {
 	margin-top: 50px;
 	height: 400px;
 	width: 100%;
-	background-image: url(images/bannerwallpaper.jpg);
+	background-image: url(images/panzer.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0% 40%;
+	background-position: 0% 30%;
 	z-index: 0;
+	/*animation: animatedBackground 10s;*/
+	animation: 20s linear .1s animatedBackground;
+/*    animation-iteration-count: infinite;*/
+    /*animation-timing-function: linear;*/
+    animation-fill-mode: forwards;  
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0% 30%; }
+
+  to {
+    background-position: 0% 60%; }
+   
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0% 30%; }
+
+  to {
+    background-position: 0% 60%; }
+ 
 }
 .home-background {
 	background-image: url(images/genbg.jpg);
@@ -325,8 +348,10 @@ nav {
 	justify-content: flex-start;
 	margin-top: 50px;
 }
-.ammo_card img{
-	width: 30%;
+.ammo-img {
+	min-width: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .ammo_content {
 	margin: 20px 20px 20px 20px;
@@ -394,6 +419,7 @@ nav {
 	width: 60%;
 	display: flex;
 	flex-direction: column;
+	margin-top: 50px;
 }
 .future-img-container:first-of-type {
 	display: block;
@@ -408,15 +434,44 @@ nav {
 	display: block;
 }
 .future-details-container {
+	margin-top: 25px;
+	color: white;
 	display: none;
 	width: 100%;
 	background: #1A1A1A;
+	padding: 25px 20px 25px 20px;
 }
 .future-click {
 	color: white;
-	width: 10%;
-	height: 200px;
-	background:#1A1A1A;
+	width: 5%;
+	height: 400px;
+	background-color: #1A1A1A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 20px 0 20px;
+
+}
+.future-click:hover {
+	border: 1px solid white;
+	background-color: black;
+	-webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+
+}
+.future-click:active {
+	background-color: white;
+}
+
+div.future-click img {
+	width: 30%;
+} 
+div.future-click:hover img {
+	width: 35%;
+	-webkit-transition: width 250ms linear;
+    -ms-transition: width 250ms linear;
+    transition: width 250ms linear;
 }
 .future-click:hover {
 	cursor: pointer;

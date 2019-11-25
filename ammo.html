@@ -51,7 +51,7 @@
     <div class="content_bottom">
       <div class="ammo-cards-container">
           <div class="ammo_card">
-              <img src="images/sabo.jpg">
+            <div class="ammo-img" style="background-image: url(images/sabo.jpg);"></div>
               <div class="ammo_content">
               <h2>APFSDS</h2>
               <p>Armour-piercing fin-stabilized discarding sabot (APFSDS) is a type of kinetic energy penetrator ammunition used to attack modern vehicle armour. As an armament for main battle tanks, it succeeds armour-piercing discarding sabot (APDS) ammunition, which is still used in small or medium caliber weapon systems.</p>
@@ -61,6 +61,34 @@
             <div class="ammo-video-container displaynone" id="APFSDS">
                 <video autoplay muted loop id="battle_video">
                 <source src="src/APFSDS long rod penetrator animation and slow motion impacts.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+                </video>
+            </div>
+          <div class="ammo_card">
+              <div class="ammo-img" style="background-image: url(images/apshell.jpg);"></div>
+              <div class="ammo_content">
+              <h2>Armor-piercing shell</h2>
+              <p>An armor-piercing shell,AP for short, is a type of ammunition designed to penetrate armor. From the 1860s to 1950s, a major application of armor-piercing projectiles was to defeat the thick armor carried on many warships. From the 1920s onwards, armor-piercing weapons were required for anti-tank missions.</p>
+              <button class="show_vid" id="click_show2">SHOW VIDEO</button>
+              </div>
+          </div>
+            <div class="ammo-video-container displaynone" id="AP">
+                <video autoplay muted loop id="battle_video">
+                <source src="src/ap.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+                </video>
+            </div>
+          <div class="ammo_card">
+              <div class="ammo-img" style="background-image: url(images/heatshell.jpg);"></div>
+              <div class="ammo_content">
+              <h2>HEAT</h2>
+              <p>A high-explosive anti-tank (HEAT) warhead is a type of shaped charge explosive that uses the Munroe effect to penetrate thick tank armor. The warhead functions by having the explosive charge collapse a metal liner inside the warhead into a high-velocity superplastic jet.</p>
+              <button class="show_vid" id="click_show3">SHOW VIDEO</button>
+              </div>
+          </div>
+            <div class="ammo-video-container displaynone" id="HEAT" style="margin-bottom: 200px;">
+                <video autoplay muted loop id="battle_video">
+                <source src="src/heat.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
                 </video>
             </div>
@@ -85,6 +113,29 @@
                  }; 
             }
             );
+        $("#click_show2").click(
+            function(){
+                $("#AP").slideToggle(500); 
+                     // $("#click_show").text("HIDE VIDEO");
+                      if ($(this).text() == "HIDE VIDEO") { 
+                $(this).text("SHOW VIDEO"); 
+                } else { 
+                 $(this).text("HIDE VIDEO"); 
+                 }; 
+            }
+            );
+        $("#click_show3").click(
+            function(){
+                $("#HEAT").slideToggle(500); 
+                     // $("#click_show").text("HIDE VIDEO");
+                      if ($(this).text() == "HIDE VIDEO") { 
+                $(this).text("SHOW VIDEO"); 
+                } else { 
+                 $(this).text("HIDE VIDEO"); 
+                 }; 
+            }
+            );
+</script>
 </script>
 </html>
 
