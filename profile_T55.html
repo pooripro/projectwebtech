@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>T55</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_history.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- แถบด้านบน  -->
+    <nav>
+        <div id="logo-container" class="animated fadeInLeft">
+            <a class="content-link" href="home.html"></a>
+            <img src="images/shield.png">
+            <h1>AW</h1>
+        </div>
+        <h4 id="nav-indicator">Back to HomePage</h4>
+
+    </nav>
+
+    <!--  เนื้อหา content ด้านบน  -->
+
+    <div class="banner" id="slideDown" style="background-image: url(images/tank_T55/Background_Top.png);">
+        <div class="home-container" style="margin-top: 50px">
+            <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
+
+                <div><img src="images/flags/russia.jpg" alt="ammo"></div>
+
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-25s">
+                <h1 style="font-size: 4em;">T55</h1>
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
+                <h2>
+                    Russia
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!--  เนื้อหา content ด้านล่าง -->
+    <div class="content_bottom" style="flex-wrap: wrap;">
+        <div class="tank-container" style="max-height: 500px">
+            <div class="tank-card" style="background-image: url(images/tank_T55/Content.png);">
+                <div class="tank-details">
+                    <h4>T55, Russia</h4>
+                    <img src="images/flags/russia.jpg">
+                </div>
+            </div>
+            <div class="profile-details-container">
+                <h1>Profile</h1>
+                <p>The T-55 tanks are a series of Soviet main battle tanks introduced in the years following the Second
+                    World War. The first T-54 prototype was completed at Nizhny Tagil by the end of 1945. Initial
+                    production ramp up settled for 1947 at Nizhny Tagil, and 1948 for Kharkiv were halted and curtailed
+                    as many problems were uncovered; the T-34-85 still accounted for 88 percent of production through
+                    the 1950s. The T-54 eventually became the main tank for armoured units of the Soviet Army, armies of
+                    the Warsaw Pact countries, and many others. T-54s and T-55s have been involved in many of the
+                    world's armed conflicts since the later part of the 20th century.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#slideDown").slideDown(1500);
+    });
+    $("#logo-container").hover(function () {
+        console.log("moused over")
+        $("#nav-indicator").fadeIn(500);
+        // $('#nav-indicator').css('display', 'block');
+    }, function () {
+        $('#nav-indicator').fadeOut(500);
+    });  
+</script>
+
+</html>

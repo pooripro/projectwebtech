@@ -22,9 +22,10 @@
     <!-- แถบด้านบน  -->
     <nav>
         <div id="logo-container" class="animated fadeInLeft">
+        <a class="content-link" href="home.html"></a>
         <img src="images/shield.png">
-        <h1>AW</h1></div>
-        <a class="content-link" href="home.html"></a>   
+        <h1>AW</h1></div>     
+        <h4 id="nav-indicator">Back to HomePage</h4>   
     </nav>
 
     <!--  เนื้อหา content ด้านบน  -->
@@ -50,7 +51,7 @@
     <!--  เนื้อหา content ด้านล่าง -->
     <div class="content_bottom">
       <div class="ammo-cards-container">
-          <div class="ammo_card">
+          <div class="ammo_card animated fadeInUp">
             <div class="ammo-img" style="background-image: url(images/sabo.jpg);"></div>
               <div class="ammo_content">
               <h2>APFSDS</h2>
@@ -64,7 +65,7 @@
                 Your browser does not support HTML5 video.
                 </video>
             </div>
-          <div class="ammo_card">
+          <div class="ammo_card animated fadeInUp delay-025s">
               <div class="ammo-img" style="background-image: url(images/apshell.jpg);"></div>
               <div class="ammo_content">
               <h2>Armor-piercing shell</h2>
@@ -78,7 +79,7 @@
                 Your browser does not support HTML5 video.
                 </video>
             </div>
-          <div class="ammo_card">
+          <div class="ammo_card animated fadeInUp delay-05s">
               <div class="ammo-img" style="background-image: url(images/heatshell.jpg);"></div>
               <div class="ammo_content">
               <h2>HEAT</h2>
@@ -135,6 +136,13 @@
                  }; 
             }
             );
+        $("#logo-container").hover(function(){
+            console.log("moused over")
+            $("#nav-indicator").fadeIn(500);
+            // $('#nav-indicator').css('display', 'block');
+              }, function(){
+         $('#nav-indicator').fadeOut(500);
+  }); 
 </script>
 </script>
 </html>

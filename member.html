@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html>
+<head>
+        <title>Armored Warfare</title>
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <script
+ 	 		src="https://code.jquery.com/jquery-3.4.1.min.js"
+  			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  			crossorigin="anonymous">	
+  		</script>
+  		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<nav>
+		<div id="logo-container" class="animated fadeInLeft">
+		<img src="images/shield.png">
+		<a class="content-link" id="onclick" href="home.html"></a>	
+		<h1>AW</h1></div>
+		<h4 id="nav-indicator">Back to HomePage</h4>
+	</nav>
+	<div class="home-background">
+		<div class="content-cards-container">
+			<div class="content-member-row">
+				<div class="member-card animated fadeInDown" id="member-1">
+					<img src="images/pluem.jpg">
+					<h2 class="name">Pitchanon Wongkhamlu</h2>
+					<h2>Student ID : 62130500067<h2>
+					<h2>Head Designer<h2>
+				</div>
+				<div class="member-card animated fadeInDown delay-025s" id="member-2">
+					<img src="images/pro.jpg">
+					<h2 class="name">Puwa Termnuphan​</h2>
+					<h2>Student ID: 62130500075<h2>
+					<h2>Junior-Developer<h2>
+				</div>
+				<div class="member-card animated fadeInDown delay-05s" id="member-3">
+					<img src="images/ruang.jpg">
+					<h2 class="name">Ruangrit Kaewkrom</h2>
+					<h2>Student ID : 62130500077<h2>
+					<h2>Chief-Developer<h2>
+				</div>																				
+			</div>		
+		</div>
+		<div class="source-container">
+			<div class="source animated fadeInUp delay-075s">
+						<h3>Source</h3>
+						<h4>Content</h4>
+						<ul>
+							<li><a href="https://en.wikipedia.org/wiki/Tank">Wikipedia : Tank <span>https://en.wikipedia.org/wiki/Tank</span></a></li>
+							<li><a href="https://wiki.wargaming.net/en/Tactics">Wargamming.net : tactics<span>https://wiki.wargaming.net/en/Tactics</span></a></li>
+							<li><a href="http://www.military-today.com/tanks">Military-Today.com <span>http://www.military-today.com/tanks</span></a></li>
+						</ul>
+						<h4>JavaScript/CSS</h4>
+						<ul>
+							<li><a href="https://jquery.com/">Jquery <span>https://jquery.com/</span></a></li>
+							<li><a href="https://daneden.github.io/animate.css/">Animate.css <span>https://daneden.github.io/animate.css/</span></a></li>
+							<li><a href="https://stackoverflow.com/">StackOverflow <span>https://stackoverflow.com/</span></a></li>
+							<li><a href="https://www.w3schools.com/m">w3schools <span>https://www.w3schools.com/</span></a></li>
+						</ul>
+			</div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+				setTimeout(function(){
+				$(".member-card").removeClass("animated fadeInDown"); 
+				$("#member-1").addClass("floating");
+				$("#member-2").removeClass("delay-025s").addClass("floating-reverse");
+				$("#member-3").removeClass("delay-05s").addClass("floating");
+					},1400);
+
+
+
+
+		});
+		$("#logo-container").hover(function(){
+			console.log("moused over")
+			$("#nav-indicator").fadeIn(500);
+			// $('#nav-indicator').css('display', 'block');
+		}, function(){
+    $('#nav-indicator').fadeOut(500);
+  });
+		// $("#onclick").click(function(){
+ 	// 	scroll(0,0);
+		// });
+
+
+	</script>
+</html>
