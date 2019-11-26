@@ -533,6 +533,13 @@ div.future-click:hover img {
 }
 .member-card img {
 	width: 100%;
+	filter: grayscale(50%);
+}
+.member-card:hover img {
+	filter: grayscale(0%);
+	-webkit-transition: filter 0.5s linear;
+ 	-ms-transition: filter 0.5s linear;
+	transition: filter 0.5s linear;
 }
 div.member-card h2 {
 	text-align: center;
