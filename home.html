@@ -93,7 +93,8 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
     			$("#slideDown").slideDown(1200);
-				$("#slideDown").scrollTop(0);
+				$("body").scrollTop(0);
+				$(".member-link").fadeIn(1200);
 		});
 		$("#logo-container").hover(function(){
 			console.log("moused over")

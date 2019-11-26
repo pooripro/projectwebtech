@@ -501,12 +501,35 @@ div.future-click:hover img {
 	right: 50px;
 	bottom: 50px;
 	font-weight: lighter;
+    animation-name: glowing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    display: none;
+   	-webkit-transition: bottom 0.5s linear;
+    -ms-transition: bottom 0.5s linear;
+    transition: bottom 0.5s linear;
+
+}
+.member-link:hover {
+	bottom: 60px;
+	-webkit-transition: bottom 0.5s linear;
+    -ms-transition: bottom 0.5s linear;
+    transition: bottom 0.5s linear;
+
+}
+@keyframes glowing {
+  0% { text-shadow: 0 0 -10px white; }
+  40% { text-shadow: 0 0 20px white; }
+  60% { text-shadow: 0 0 20px white; }
+  100% { text-shadow: 0 0 -10px white; }
 }
 .member-card {
 	width: 300px;
-	height: 500px;
-	background-color: #1A1A1A99;
+	height: 490px;
+	background-color: black;
 	border: 1px solid white;
+	box-shadow: 0px 5px 10px;
 }
 .member-card img {
 	width: 100%;
@@ -605,6 +628,14 @@ div.member-card h2 {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+#member-2 {
+	margin-top: 15px;
+}
+.name {
+	background-color: white;
+	color: black !important;
+	margin-top: -5px !important;
+}
 
 @keyframes floating {
     from { transform: translate(0,  0px); }
@@ -612,7 +643,7 @@ div.member-card h2 {
     to   { transform: translate(0, -0px); }    
 }
 @keyframes floatingreverse {
-    from { transform: translate(0,  15px); }
-    65%  { transform: translate(0, 0px); }
-    to   { transform: translate(0, 15px); }    
+    from { margin-top: 15px; }
+    65%  { margin-top: 0px; }
+    to   { margin-top: 15px; }    
 }
