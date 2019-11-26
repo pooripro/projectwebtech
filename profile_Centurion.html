@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Centurion</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_history.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- แถบด้านบน  -->
+    <nav>
+        <div id="logo-container" class="animated fadeInLeft">
+            <a class="content-link" href="home.html"></a>
+            <img src="images/shield.png">
+            <h1>AW</h1>
+        </div>
+        <h4 id="nav-indicator">Back to HomePage</h4>
+
+    </nav>
+
+    <!--  เนื้อหา content ด้านบน  -->
+
+    <div class="banner" id="slideDown" style="background-image: url(images/tank_Centurion/Background_Top.png);">
+        <div class="home-container" style="margin-top: 50px">
+            <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
+
+                <div><img src="images/flags/uk.jpg" alt="ammo"></div>
+
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-25s">
+                <h1 style="font-size: 4em;">Centurion</h1>
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
+                <h2>
+                    United Kingdom
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!--  เนื้อหา content ด้านล่าง -->
+    <div class="content_bottom" style="flex-wrap: wrap;">
+        <div class="tank-container" style="max-height: 500px">
+            <div class="tank-card" style="background-image: url(images/tank_Centurion/Content.png);">
+                <div class="tank-details">
+                    <h4>Centurion, UK</h4>
+                    <img src="images/flags/uk.jpg">
+                </div>
+            </div>
+            <div class="profile-details-container">
+                <h1>Profile</h1>
+                <p>The Centurion was the primary British main battle tank of the post-Second World War period.
+                    Introduced in 1945, it is widely considered to be one of the most successful post-war tank designs,
+                    remaining in production into the 1960s, and seeing combat in the front lines into the 1980s. The
+                    chassis was also adapted for several other roles, and these have remained in service to this day.
+
+
+                    Development of the Centurion began in 1943 with manufacture beginning in January 1945. Six
+                    prototypes arrived in Belgium less than a month after the war in Europe ended in May 1945. It first
+                    entered combat with the British Army in the Korean War in 1950, in support of the UN forces. The
+                    Centurion later served in the Indo-Pakistani War of 1965, where it fought against US-supplied M47
+                    and M48 Patton tanks and it served with the Royal Australian Armoured Corps in Vietnam. </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#slideDown").slideDown(1500);
+    });
+    $("#logo-container").hover(function () {
+        console.log("moused over")
+        $("#nav-indicator").fadeIn(500);
+        // $('#nav-indicator').css('display', 'block');
+    }, function () {
+        $('#nav-indicator').fadeOut(500);
+    });  
+</script>
+
+</html>

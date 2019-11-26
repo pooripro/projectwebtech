@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>M1A2 Abrams</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_history.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- แถบด้านบน  -->
+    <nav>
+        <div id="logo-container" class="animated fadeInLeft">
+            <a class="content-link" href="home.html"></a>
+            <img src="images/shield.png">
+            <h1>AW</h1>
+        </div>
+        <h4 id="nav-indicator">Back to HomePage</h4>
+
+    </nav>
+
+    <!--  เนื้อหา content ด้านบน  -->
+
+    <div class="banner" id="slideDown" style="background-image: url(images/tank_M1A2/Background_Top.png);">
+        <div class="home-container" style="margin-top: 50px">
+            <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
+                <!-- flag -->
+                <div><img src="images/tank_M1A2/Flag_USA.png" alt="ammo"></div>
+
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-25s">
+                <h1 style="font-size: 4em;">M1A2 Abrams</h1>
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
+                <h2>
+                    USA
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!--  เนื้อหา content ด้านล่าง -->
+    <div class="content_bottom" style="flex-wrap: wrap;">
+        <div class="tank-container" style="max-height: 500px">
+            <div class="tank-card" style="background-image: url(images/tank_M1A2/Content.png);">
+                <div class="tank-details">
+                    <h4>M1A2 Abrams, USA</h4>
+                    <img src="images/tank_M1A2/Flag_USA.png">
+                </div>
+            </div>
+            <div class="profile-details-container">
+                <h1>Profile</h1>
+                <p>Its firepower is slightly inferior to other tanks like the Leopard 2A7 due to its shorter 120 mm L44
+                    smoothbore gun. Yet despite this, it is still a very dangerous war machine.
+                    Its multifuel turbine engine offers good performance but does require a lot of maintenance. The U.S.
+                    Army plans to keep the tank in service well into 2050.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#slideDown").slideDown(1500);
+    });
+    $("#logo-container").hover(function () {
+        console.log("moused over")
+        $("#nav-indicator").fadeIn(500);
+        // $('#nav-indicator').css('display', 'block');
+    }, function () {
+        $('#nav-indicator').fadeOut(500);
+    });  
+</script>
+
+</html>

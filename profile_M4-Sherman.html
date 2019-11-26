@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>M4 Sherman</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_history.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- แถบด้านบน  -->
+    <nav>
+        <div id="logo-container" class="animated fadeInLeft">
+            <a class="content-link" href="home.html"></a>
+            <img src="images/shield.png">
+            <h1>AW</h1>
+        </div>
+        <h4 id="nav-indicator">Back to HomePage</h4>
+
+    </nav>
+
+    <!--  เนื้อหา content ด้านบน  -->
+
+    <div class="banner" id="slideDown" style="background-image: url(images/tank_M4-Sherman/Background_Top.png);">
+        <div class="home-container" style="margin-top: 50px">
+            <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
+
+                <div><img src="images/flags/usa.jpg" alt="ammo"></div>
+
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-25s">
+                <h1 style="font-size: 4em;">M4 Sherman</h1>
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
+                <h2>
+                    United States of America
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!--  เนื้อหา content ด้านล่าง -->
+    <div class="content_bottom" style="flex-wrap: wrap;">
+        <div class="tank-container" style="max-height: 500px">
+            <div class="tank-card" style="background-image: url(images/tank_M4-Sherman/Content.png);">
+                <div class="tank-details">
+                    <h4>M4 Sherman, USA</h4>
+                    <img src="images/flags/usa.jpg">
+                </div>
+            </div>
+            <div class="profile-details-container">
+                <h1>Profile</h1>
+                <p>The M4 Sherman evolved from the M3 Medium Tank, which had its main armament in a side sponson mount.
+                    The M4 retained much of the previous mechanical design, by putting the main 75 mm gun in a fully
+                    traversing turret. One feature, a one-axis gyrostabilizer, was not precise enough to allow firing
+                    when moving but did help keep the reticle on target, so that when the tank did stop to fire, the gun
+                    would be aimed in roughly the right direction.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#slideDown").slideDown(1500);
+    });
+    $("#logo-container").hover(function () {
+        console.log("moused over")
+        $("#nav-indicator").fadeIn(500);
+        // $('#nav-indicator').css('display', 'block');
+    }, function () {
+        $('#nav-indicator').fadeOut(500);
+    });  
+</script>
+
+</html>

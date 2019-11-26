@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leopard 2A7</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_history.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- แถบด้านบน  -->
+    <nav>
+        <div id="logo-container" class="animated fadeInLeft">
+            <a class="content-link" href="home.html"></a>
+            <img src="images/shield.png">
+            <h1>AW</h1>
+        </div>
+        <h4 id="nav-indicator">Back to HomePage</h4>
+
+    </nav>
+
+    <!--  เนื้อหา content ด้านบน  -->
+
+    <div class="banner" id="slideDown" style="background-image: url(images/tank_Tiger-I/Background_Top.jpg);">
+        <div class="home-container" style="margin-top: 50px">
+            <div class="home-container-row-1 center-content animated fadeInDown delay-1s ">
+
+                <div><img src="images/flags/ger_nazi.png" alt="ammo"></div>
+
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-25s">
+                <h1 style="font-size: 4em;">Tiger I</h1>
+            </div>
+            <div class="home-container-row-2 center-content animated fadeInUp delay-1-5s">
+                <h2>
+                    Germany
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!--  เนื้อหา content ด้านล่าง -->
+    <div class="content_bottom" style="flex-wrap: wrap;">
+        <div class="tank-container" style="max-height: 500px">
+            <div class="tank-card" style="background-image: url(images/tank_Tiger-I/Content.png);">
+                <div class="tank-details">
+                    <h4>Tiger I , Germany</h4>
+                    <img src="images/flags/ger_nazi.png">
+                </div>
+            </div>
+            <div class="profile-details-container">
+                <h1>Profile</h1>
+                <p>The Tiger I About this soundlisten (help·info) is a German heavy tank of World War II that was
+                    employed from 1942 in Africa and Europe, usually in independent heavy tank battalions. Its final
+                    designation was Panzerkampfwagen VI Tiger Ausf. E often shortened to Tiger. The Tiger I gave the
+                    German Army its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (derived from the
+                    8.8 cm Flak 36). 1,347 were built between August 1942 and August 1944. After August 1944, production
+                    of the Tiger I was phased out in favour of the Tiger II.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#slideDown").slideDown(1500);
+    });
+    $("#logo-container").hover(function () {
+        console.log("moused over")
+        $("#nav-indicator").fadeIn(500);
+        // $('#nav-indicator').css('display', 'block');
+    }, function () {
+        $('#nav-indicator').fadeOut(500);
+    });  
+</script>
+
+</html>
